@@ -1,0 +1,26 @@
+{
+  "name": "livekit-agent",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx agent.ts dev",
+    "build": "tsc",
+    "start": "node agent.js start",
+    "download-files": "tsx agent.ts download-files"
+  },
+  "dependencies": {
+    "@livekit/agents": "^1.0.7",
+    "@livekit/agents-plugin-google": "^1.0.7",
+    "@livekit/agents-plugin-silero": "^1.0.7",
+    "@livekit/noise-cancellation-node": "^0.1.9",
+    "@supabase/supabase-js": "^2.39.0",
+    "dotenv": "^16.3.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
+
